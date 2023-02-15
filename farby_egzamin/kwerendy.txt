@@ -1,0 +1,11 @@
+--kw1
+
+SELECT cena FROM farby WHERE kolor = 'niebieski';
+
+--kw2
+
+SELECT kolor, cena / pojemnosc AS cena_jeden_litr FROM farby;
+
+--kw3
+
+SELECT farby.kolor FROM farby JOIN malowanie ON farby.id_farby = malowanie.id_farby WHERE malowanie.id_pomieszczenia = 3;
