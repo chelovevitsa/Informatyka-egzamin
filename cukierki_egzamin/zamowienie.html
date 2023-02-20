@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+</head>
+<body>
+    <div class="headers">
+        <div class="top-header">
+            <div class="odnosnik">
+                <a href="zamowienie.html" id="odnosnik">Zamów cukierki</a>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <a href="index.html"><img src="cukierki2.png" alt="Nasze logo"></a>
+        </div>
+    </div>
+    <div class="baner">
+        <h1>Strefa zamówień</h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <p class="nk">Numer kształtu: </p>
+            <input type="number" id="nk">
+            <p class="kolor">skomponuj swój kolor, podaj RGB: </p>
+            <div class="inputs">
+                <label>R: </label>
+                <input id="r" type="number" min="0" max="255">
+                <label>G: </label>
+                <input id="g" type="number" min="0" max="255">
+                <label>B: </label>
+                <input id="b" type="number" min="0" max="255">
+            </div>
+            <button id="zamowienie">Zamówienie</button>
+            <p id="zm">Twoje zamówienie</p>
+            <button id="kolor">Kolor</button>
+        </div>
+        <div class="right">
+            <h2>Nasza oferta</h2>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz zamówić<br> dowolny kolor cukierka</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="stopka">
+        <p>Autor strony: <strong>00000000000</strong></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

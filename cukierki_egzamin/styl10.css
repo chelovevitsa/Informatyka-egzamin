@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headers {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-header, .bottom-header {
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.baner, .stopka {
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.left, .right {
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 450px;
+}
+
+.odnosnik {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(cukierki1.jpg);
+    padding-right: 30px; /*  idk why in egz writtten 30px */
+    padding-bottom: 120px;
+}
+
+#odnosnik {
+    text-decoration: none;
+    font-size: 150%;
+}
+
+table, tr, td {
+    border: 2px dashed green;
+    margin: 30px;
+    padding: 20px;
+}
+
+h1 {
+    letter-spacing: 20px;
+    font-size: 250%;
+}
+
+.inputs {
+    justify-content: space-between;
+    align-items: center;
+}
+
