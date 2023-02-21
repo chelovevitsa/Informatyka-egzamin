@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.baner {
+    background-color: #B284BE;
+    height: 60px;
+    font-size: 120%;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.lewy {
+    background-color: #BCE27F;
+    height: 600px;
+    width: 25%;
+    font-size: 120%;
+}
+
+.srodkowy {
+    background-color: #BCE27F;
+    height: 600px;
+    width: 50%;
+    text-align: center;
+}
+
+.prawy {
+    background-color: #BCE27F;
+    height: 600px;
+    width: 25%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.stopka {
+    background-color: #B284BE;
+    height: 60px;
+    text-align: left;
+    padding: 5px;
+}
+
+ul {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #B284BE;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2, img {
+    margin-top: 50px;
+}
+
+form {
+    margin-bottom: 100px;
+}
