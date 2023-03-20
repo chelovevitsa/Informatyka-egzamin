@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Miernik jakosci hasla</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div class="baner">
+            <a href="index.html"><h1>Sprawdz swoje haslo</h1></a>
+        </div>
+        <div class="panele">
+            <div class="lewa">
+                <h2>Wybierz</h2>
+                <ol>
+                    <a href="haslo.html">
+                        <li>Sprawdz haslo</li>
+                    </a>
+                    <a href="zasady.html">
+                        <li>Zasady tworzenia hasla</li>
+                    </a>
+                </ol>
+            </div>
+            <div class="prawa">
+                <p>Twoje haslo:</p>
+                <input type="password" id="input">
+                <button type="button" onClick="haslo()">Sprawdz</button>
+                <p id="p"></p>
+            </div>
+        </div>
+        <div class="stopka">
+            <h3>Miernik jakosci hasla</h3>
+            <p>Strone opracowal: 00000000000</p>
+        </div>
+        <script>
+            function haslo() {
+                var x = input.value
+                if(x==""){
+                    p.style.color="red"
+                    p.innerHTML="WPISZ HASLO"
+                }
+                else if(x.search("[0-9]")>=0 && x.length>6){
+                    p.style.color="green"
+                    p.innerHTML="DOBRE" 
+                } else if(x.search("[0-9]")>=0 && x.length>=4 && x.length<=6){
+                    p.style.color="blue"
+                    p.innerHTML="SREDNIE"
+                }
+                else {
+                    p.style.color="yellow"
+                    p.innerHTML="SLABE"
+                }
+            }
+        </script>
+    </body>
+</html>
