@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+    display: flex;
+    background-color: forestgreen;
+    height: 100px;
+}
+.tytul {
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+.miniatura {
+    width: 20%;
+}
+
+
+main {
+    display: flex;
+    background-color: tan;
+    height: 700px;
+}
+.lewy {
+    width: 25%;
+}
+.prawy {
+    width: 75%;
+}
+
+footer {
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+}
+
+img {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid forestgreen;
+    border-radius: 20px;
+}
+img:hover {
+    border: 1px solid maroon;
+}
+.photo {
+    height: 150px;
+    
+}
+
+h3, p {
+    margin: 0;
+}
