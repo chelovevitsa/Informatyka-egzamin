@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato' sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+nav li {
+    margin-right: 20px;
+}
+li {
+    list-style: none;
+}
+nav li:last-child {
+    margin-right: 0px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+a {
+    font-size: 1.2rem;
+    color:#315659
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.left, .center, .right {
+    
+    flex-basis: calc(33.33% - 20px);
+    background-color: #eee;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+img {
+    padding: 0.5rem;
+    width: 90%;
+}
+.left {
+    margin-right: 20px;
+}
+.right {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold; 
+    /* pogrubiona czcionka */
+    margin-bottom: 0.5rem;
+}

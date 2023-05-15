@@ -1,0 +1,28 @@
+SELECT id, nazwa FROM rodzajobiektu
+
+k2:
+SELECT id, nazwa FROM rodzajobiektu WHERE id = 2
+
+k3:
+SELECT id, nazwa FROM obiektsportowy
+
+k4:
+SELECT obiektsportowy.id, obiektsportowy.nazwa, obiektsportowy.adres, obiektsportowy.godzinyOtwarcia, obiektsportowy.obrazek, rodzajobiektu.nazwa AS obiekt FROM obiektsportowy
+JOIN rodzajobiektu ON obiektsportowy.rodzajObiektu = rodzajobiektu.id 
+WHERE obiektsportowy.id = 3
+
+k5:
+INSERT INTO `obiektsportowy`(`nazwa`, `adres`, `rodzajObiektu`, `godzinyOtwarcia`, `obrazek`) VALUES ('Vizja Park','ul.Okopowa 59, 01-043 Warszawa',4,'07:00 – 22:30','default.jpeg')
+
+k6:
+SELECT rezerwacja.czasRozpoczecia, rezerwacja.czasZakonczenia, obiektSportowy.nazwa, uzytkownik.email FROM rezerwacja
+JOIN obiektSportowy ON obiektSportowy.id = rezerwacja.obiektSportowy
+JOIN uzytkownik ON uzytkownik.id = rezerwacja.uzytkownik
+WHERE obiektSportowy.nazwa = "Stadion Łazienkowski"
+
+k7:
+ALTER TABLE rezerwacja
+ADD czyPodtwierdzona BOOLEAN DEFAULT false;
+
+UPDATE rezerwacja
+SET czyPodtwierdzona = true
