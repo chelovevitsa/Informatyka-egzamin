@@ -1,0 +1,18 @@
+kw1: 
+SELECT id, nazwa FROM rodzajpokoju;
+
+kw2:
+SELECT id, nazwa FROM pokoj
+WHERE numer = 2
+
+kw3:
+INSERT INTO `rezerwacja`(`imie`, `nazwisko`, `czasRozpoczecia`, `czasZakonczenia`, `pokoj`) VALUES ('Jan','Nowak','2023-05-16 15:00','2023-05-17 12:00',2)
+
+kw4:
+SELECT pokoj.nazwa, pokoj.numer, rezerwacja.imie, rezerwacja.nazwisko, rezerwacja.czasRozpoczecia, rezerwacja.czasZakonczenia FROM pokoj
+JOIN rezerwacja ON rezerwacja.pokoj = pokoj.id
+WHERE pokoj.id=2
+
+kw5:
+SELECT DISTINCT p.nazwa, p.numer FROM Pokoj p
+JOIN rezerwacja ON rezerwacja.pokoj = p.id

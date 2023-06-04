@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+ul li {
+    margin-right: 20px;
+}
+ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+.left-block, .center-block, .right-block {
+    flex-basis: calc(33.33% - 20px);
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.left-block {
+    margin-right: 20px;
+    background-color: #eee;
+}
+.right-block {
+    margin-left: 20px;
+    background-color: #eee;
+}
+.center-block {
+    background-color: #788AA3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: italic;
+}
+a {
+    font-size: 1.2rem;
+    color: #315659;
+}
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.left-block ul {
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+form label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+form .inp, form select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
