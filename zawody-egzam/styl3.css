@@ -1,0 +1,55 @@
+body {
+    font-family: Verdana;
+}
+
+header, footer {
+    display: flex;
+}
+.left, .right {
+    background-color: seagreen;
+    color: white;
+    line-height: 150px;
+    height: 260px;
+    font-size: 160%;
+}
+.left {
+    width: 75%;
+}
+.right {
+    width: 25%;
+    text-align: right;
+}
+
+main  {
+    background-color: mintcream;
+    padding: 80px;
+}
+
+.left-foot, .right-foot {
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+}
+.inp, button {
+    margin-bottom: 20px;
+}
+button {
+    margin-right: 2px; 
+}
+/* nie prosili o tym< ale na zdjeciu jest odstep --button*/
+img {
+    box-shadow: 15px 15px blur 10px dimgray;
+}
+a {
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px
+}
