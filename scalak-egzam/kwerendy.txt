@@ -1,0 +1,13 @@
+SELECT id,nazwa, opis, cena FROM podzespoly
+WHERE cena < 1000
+
+SELECT p.nazwa, p.opis FROM podzespoly p
+JOIN producenci ON p.producenci_id = producenci.id
+WHERE p.dostepnosc=1 AND producenci.nazwa = 'Intel'
+
+SELECT p.nazwa, producenci.nazwa FROM podzespoly p
+JOIN producenci ON producenci.id = p.producenci_id
+
+UPDATE producenci
+SET nazwa= UPPER(nazwa)
+WHERE nazwa='Patriot'

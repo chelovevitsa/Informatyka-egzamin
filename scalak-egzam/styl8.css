@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia;
+} 
+header {
+    display: flex;
+}
+header nav, header div {
+    background-color: #63AC74;
+    color: orange;
+    height: 140px;
+    width: 50%;
+    text-align: right;
+    font-size: 160%;
+}
+header nav ul {
+    justify-content: flex-end;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+main {
+    background-color: #E3F6E7;
+    height: 500px;
+    padding: 20px;
+}
+footer {
+    display: flex;
+    background-color: #63AC74;
+    height: 150px;
+}
+footer div {
+    width: 25%;
+}
+a {
+    color: orange;
+    margin: 15px;
+}
+table {
+    width: 100%;
+    border: 2px solid green;
+}
+table th {
+    background-color: #63AC74;
+    color: white;
+}
+table td:last-child {
+    text-align: right;
+}
